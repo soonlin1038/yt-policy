@@ -14,12 +14,16 @@
   p, li { color:var(--fg); }
   .meta { color:var(--muted); font-size:.92rem; }
   a { color:var(--accent); }
+  .nav { margin:1rem 0; padding:.6rem .9rem; border:1px solid var(--line); border-radius:8px; font-weight:600; }
+  .yt { padding:.8rem 1rem; border-left:4px solid #c4302b; background:rgba(196,48,43,.06); border-radius:6px; }
 </style>
 </head>
 <body>
 <main>
 <h1>林麻-醫學冷知識研究室</h1>
 <p class="meta">隱私權政策與服務條款｜最後更新:2026 年 11 月 8 日</p>
+<nav class="nav"><a href="#privacy">隱私權政策</a> ｜ <a href="#terms">服務條款</a> ｜ <a href="#deletion">資料刪除</a> ｜ <a href="#contact">聯絡方式</a></nav>
+<p class="yt">本工具使用 <strong>YouTube API 服務</strong>(YouTube API Services)。使用本工具即表示同意 <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube 服務條款</a>,並適用 <a href="https://policies.google.com/privacy" rel="noopener">Google 隱私權政策</a>。</p>
 
 <p>本頁說明「林麻-醫學冷知識研究室」使用的內部發布工具「Wee Reels Publisher」(以下稱「本工具」)如何使用 Google 與 YouTube 的資料。本工具只供頻道管理者本人使用,不對外提供服務、不開放其他使用者登入。</p>
 
@@ -30,6 +34,10 @@
 <p><strong>分享與販售。</strong>本工具不分享、不出售、不轉移任何經由 YouTube API 取得的資料,也不用於廣告。</p>
 <p><strong>撤銷授權。</strong>可隨時到 <a href="https://myaccount.google.com/permissions" rel="noopener">Google 帳戶「第三方存取權」</a> 移除本工具的存取權;移除後本工具即無法再存取頻道。</p>
 <p><strong>Google 隱私權政策。</strong>本工具使用 YouTube API 服務,使用時同時適用 <a href="https://policies.google.com/privacy" rel="noopener">Google 隱私權政策</a>。</p>
+
+<h2 id="deletion">資料保存與刪除</h2>
+<p>本工具只保存兩類資料:① OAuth 授權憑證(存放在頻道管理者的 Google Cloud Secret Manager);② 自己頻道影片的編號、標題、發布時間(存放在管理者自己的檔案)。不保存任何觀眾或其他使用者的資料。</p>
+<p>要刪除資料:到 <a href="https://myaccount.google.com/permissions" rel="noopener">Google 帳戶「第三方存取權」</a> 移除本工具,或在 <a href="https://security.google.com/settings/security/permissions" rel="noopener">Google 安全性設定</a> 撤銷授權;也可以來信要求刪除,我們會在 7 天內刪除存放的授權憑證與相關紀錄。授權撤銷或停止使用後,存放的 API 資料最遲 30 天內刪除。</p>
 
 <h2 id="terms">服務條款</h2>
 <p>使用本工具即表示同意 <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube 服務條款</a>。本工具為頻道管理者自用,不提供給第三方使用;頻道影片內容為醫學史與醫學知識介紹,不構成個人醫療建議,身體狀況請諮詢醫師。</p>
